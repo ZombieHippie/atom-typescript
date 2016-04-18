@@ -904,7 +904,8 @@ repository:
       }
     ]
   template:
-    name: "meta.template.ts"
+    name: "meta.template.fuck.ts"
+    contentName: "text.embedded.html.basic"
     begin: "`"
     beginCaptures:
       "0":
@@ -915,11 +916,14 @@ repository:
         name: "string.quoted.template.ts"
     patterns: [
       {
-        include: "#template-substitution-element"
+        include: "text.html.basic"
       }
-      {
-        include: "#template-string-contents"
-      }
+      # {
+      #   include: "#template-substitution-element"
+      # }
+      # {
+      #   include: "#template-string-contents"
+      # }
     ]
   "template-string-contents":
     name: "string.quoted.template.ts"
