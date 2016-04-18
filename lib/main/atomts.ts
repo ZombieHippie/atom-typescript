@@ -286,7 +286,7 @@ function readyToActivate() {
 }
 
 export function activate(state: PackageState) {
-    require('atom-package-deps').install('atom-typescript').then(waitForGrammarActivation).then(readyToActivate)
+    require('atom-package-deps').install('atom-typescript-zh-backticks').then(waitForGrammarActivation).then(readyToActivate)
 }
 
 export function deactivate() {
@@ -327,7 +327,7 @@ function waitForGrammarActivation(): Promise<any> {
             // Just so we won't attach more events than necessary
             if (activated) return;
             editor.observeGrammar((grammar: AtomCore.IGrammar) => {
-                if (grammar.packageName === 'atom-typescript') {
+                if (grammar.packageName === 'atom-typescript-zh-backticks') {
                     activated = true;
                     resolve({});
                     editorWatch.dispose();

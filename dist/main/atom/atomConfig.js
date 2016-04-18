@@ -1,6 +1,6 @@
 "use strict";
 var utils_1 = require("../lang/utils");
-var packageName = 'atom-typescript';
+var packageName = 'atom-typescript-zh-backticks';
 function getConfig(nameLambda) {
     return atom.config.get(packageName + '.' + utils_1.getName(nameLambda));
 }
