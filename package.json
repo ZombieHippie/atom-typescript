@@ -36,10 +36,7 @@
     }
   },
   "homepage": "http://atom.io/packages/atom-typescript-zh-backticks",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ZombieHippie/atom-typescript.git"
-  },
+  "repository": "https://github.com/ZombieHippie/atom-typescript-zh-backticks.git",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ZombieHippie/atom-typescript/issues"
